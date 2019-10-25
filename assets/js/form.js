@@ -7,9 +7,9 @@ $('.js-field__phone').mask('( 999 ) 999 - 9999');
 let form = document.querySelector('.js-form');
 let formName = '.js-form';
 
-form.addEventListener('submit', function (e) {
-  submitForm(e, formName);
-});
+// form.addEventListener('submit', function (e) {
+//   submitForm(e, formName);
+// });
 
 //Send data to mail.php
 function submitForm(e, formName) {
@@ -20,8 +20,8 @@ function submitForm(e, formName) {
   let phone = $(formName + ' .js-field__phone').val();
   let company = $(formName + ' .js-field__company').val();
   let size = $(formName + ' .radio-btn__radio[name=\'company-size\']:checked').val();
-  
-  
+
+
   let formData = {
     name: name,
     lastName: lastName,
@@ -30,7 +30,7 @@ function submitForm(e, formName) {
     company: company,
     size: size
   };
-  
+
   $.ajax({
     type: 'POST',
     url: 'mail.php',
