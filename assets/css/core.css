@@ -1,0 +1,31 @@
+html { scroll-behavior: smooth; }
+
+.wrap__campaign .preview__campaign .card { background-color: #102279; border-radius: 0; }
+
+.wrap__campaign .preview__campaign .card .popular__title { color: white; }
+
+.wrap__campaign .preview__campaign .card .row { display: flex; }
+
+.wrap__campaign .preview__campaign .card .row .column { flex: 50%; display: flex; justify-content: space-around; }
+
+@media screen and (max-width: 900px) { .wrap__campaign .preview__campaign .card .row .column { flex: 50%; display: grid; justify-content: center; } }
+
+.wrap__campaign .description__campaign { height: auto; background-color: #ffb73e; padding: 10px; text-align: center; }
+
+.wrap__campaign .description__campaign p { margin-block-start: 0; margin-block-end: 0; color: black; }
+
+.wrap__campaign .contact__campaign .col-10.col-m-12 { padding: 0; }
+
+.wrap__campaign .contact__campaign .card { border-radius: 0; }
+
+.wrap__campaign .features__campaign { padding: 0 10px; }
+
+.wrap__campaign .features__campaign .section .about-app { padding-top: 123px; }
+
+.wrap__campaign .features__campaign .section .about-app .about-app__description { display: flex; justify-content: center; }
+
+.wrap__campaign .features__campaign .section .about-app .about-app__description .about-app__description-content--left { margin-left: 0; text-align: center; }
+
+@media screen and (max-width: 1200px) { .wrap__campaign .features__campaign .section .about-app { margin-top: -80px; } }
+
+/*# sourceMappingURL=core.css.map */
